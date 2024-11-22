@@ -1,0 +1,41 @@
+<app-Admin_Header></app-Admin_Header>
+<!-- <div class="proName">
+  <h2>Project Name: Employee Management Portal</h2>
+</div>
+<div class="moduleName">
+  <h4>Module 01: Login Page</h4>
+</div> -->
+<div class="dark">
+  <div class="add">
+    <button mat-raised-button color="primary" style="margin-left: 70%; margin-top: 1%" (click)="openForm()">Assign Task</button>
+  </div>
+<table>
+  <tr class="top">
+      <!-- <td>Task ID</td> -->
+      <td style="width: 200px;">Task Name</td>
+      <td style="width: 80px;">Owner</td>
+      <td>Status</td>
+      <td style="width: 80px;">Estimated Time</td>
+      <td style="width: 80px">Total Spent Hours</td>
+      <td style="width: 150px;">Module Status</td>
+      <td>Update Status</td>
+
+  </tr>
+  <tr class="bottom" *ngFor="let item of getWork1">
+      <!-- <td>EMS M1-001</td> -->
+      <td style="color: #B70404;">{{item.taskname}}</td>
+      <td style="color: #B70404;">{{item.owner}}</td>
+      <td style="color:darkblue;">{{item.status}}</td>
+      <td style="color: #B70404;">{{item.time}}</td>
+      <td style="color: darkblue;">{{item.totalTime}}</td>
+      <td style="color: darkblue;">{{item.text}}</td>
+      <td>
+        <button mat-icon-button color="primary" (click)="editTask(item)"><mat-icon>edit</mat-icon></button>
+        <button mat-icon-button color="warn"><mat-icon>delete</mat-icon></button>
+      </td>
+  </tr>
+
+
+</table>
+</div>
+

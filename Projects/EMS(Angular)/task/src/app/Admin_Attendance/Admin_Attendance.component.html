@@ -1,0 +1,24 @@
+<app-Admin_Header></app-Admin_Header>
+<div class="dark">
+  <table>
+    <tr class="Top">
+        <td>Employee Name</td>
+
+        <td>Date</td>
+        <td>Status</td>
+    </tr>
+    <tr class="bottom" *ngFor="let item of getStatus">
+      <td>{{item.username}}</td>
+      <td>{{item.date}}</td>
+      <td>{{item.status}}</td>
+      
+    </tr>
+    <br>
+
+
+
+</table>
+
+</div>
+
+

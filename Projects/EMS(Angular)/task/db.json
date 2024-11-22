@@ -1,0 +1,142 @@
+{
+  "addEmp": [
+    {
+      "username": "Swetha S",
+      "mail": "swethasuresh626@gmail.com",
+      "mobile": "9842413031",
+      "salary": "32000",
+      "id": 1
+    }
+  ],
+  "empLogin": [
+    {
+      "userId": "Swetha Suresh",
+      "password": "Swetha@123",
+      "userName": "Swetha",
+      "profile": "../../assets/Images/Swetha.png",
+      "DOB": "Aug 12"
+    },
+    {
+      "userId": "Shreemathi",
+      "password": "Shree@321",
+      "userName": "Shreemathi",
+      "profile": "../../assets/Images/Shree.jpg"
+    }
+  ],
+  "adminLogin": [
+    {
+      "userId": "Swetha",
+      "password": "Swetha@admin"
+    }
+  ],
+  "leaveForm": [
+    {
+      "username": "Swetha",
+      "tlname": "Naveen",
+      "deptname": "Testing",
+      "mobile": "9842413031",
+      "leaveDate": "2023-08-07",
+      "returnDate": "2023-08-08",
+      "reason": "Doctor Appointment",
+      "status": "",
+      "id": 1,
+      "Status": "Leave Approved"
+    },
+    {
+      "username": "Shreemathi",
+      "tlname": "Snigdha ",
+      "deptname": "Developer",
+      "mobile": "9344800721",
+      "leaveDate": "2023-08-15",
+      "returnDate": "2023-08-17",
+      "reason": "Function",
+      "status": "",
+      "id": 2
+    }
+  ],
+  "WorkForm": [
+    {
+      "taskname": "Login UI",
+      "owner": "Swetha",
+      "time": "12hr",
+      "id": 1,
+      "status": "Completed",
+      "totalTime": "12hr",
+      "text": "Module Completed"
+    },
+    {
+      "taskname": "Login Validation",
+      "owner": "Shreemathi ",
+      "time": "15hr",
+      "id": 2
+    }
+  ],
+  "EmpStatus": [],
+  "LeaveStatus": [
+    {
+      "username": "Swetha",
+      "tlname": "Naveen",
+      "dept": "Testing",
+      "leave": "2023-08-07",
+      "return": "2023-08-08",
+      "Status": "Leave Approved",
+      "id": 1
+    },
+    {
+      "username": "Shreemathi",
+      "tlname": "Snigdha ",
+      "dept": "Developer",
+      "leave": "2023-08-15",
+      "return": "2023-08-17",
+      "Status": "Leave Cancelled",
+      "id": 2
+    },
+    {
+      "username": "Swetha",
+      "tlname": "Naveen",
+      "dept": "Testing",
+      "leave": "2023-08-07",
+      "return": "2023-08-08",
+      "Status": "Leave Approved",
+      "id": 3
+    },
+    {
+      "username": "Swetha",
+      "tlname": "Naveen",
+      "dept": "Testing",
+      "leave": "2023-08-07",
+      "return": "2023-08-08",
+      "Status": "Leave Cancelled",
+      "id": 4
+    },
+    {
+      "username": "Swetha",
+      "tlname": "Naveen",
+      "dept": "Testing",
+      "leave": "2023-08-07",
+      "return": "2023-08-08",
+      "Status": "Leave Approved",
+      "id": 5
+    }
+  ],
+  "Attendance": [
+    {
+      "username": "Shreemathi",
+      "date": "8/2/2023",
+      "status": "Leave",
+      "id": 1
+    },
+    {
+      "username": "Swetha",
+      "date": "8/2/2023",
+      "status": "Work From Home",
+      "id": 2
+    }
+
+  ],
+  "HomePage": [
+    {
+      "logo": "../../assets/Images/Shree.jpg"
+    }
+  ]
+}

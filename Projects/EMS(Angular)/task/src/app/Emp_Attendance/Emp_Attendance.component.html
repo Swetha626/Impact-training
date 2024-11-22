@@ -1,0 +1,52 @@
+<app-Emp_Header></app-Emp_Header>
+<div class="dark">
+<h1>Post Attendance</h1>
+<div class="add">
+  <button mat-raised-button color="primary" style="margin-left: 80%; margin-top: 1%" (click)="view()">Attendance Status</button>
+</div>
+
+<table *ngIf="show">
+  <tr id="head">
+      <td>Username</td>
+      <td>Date</td>
+      <td>Status</td>
+  </tr>
+  <tr id="row">
+   <td>{{todayStatus.username}}</td>
+   <td>{{todayStatus.date| date:'EEEE, MMMM d, y'}}</td>
+   <td>{{todayStatus.status}}</td>
+  </tr>
+
+</table>
+
+<form [formGroup]="attendanceForm">
+  <table>
+    <tr class="Top">
+        <td>Date</td>
+        <td>Attendance</td>
+        <td>Post</td>
+    </tr>
+    <tr>
+        <td> {{ currentDate | date:'EEEE, MMMM d, y' }}</td>
+        <td>
+          <ul>
+            <li *ngIf="present"> <input  formControlName="post" name="post" id="post" type="radio" value="Present">Present</li>
+            <li *ngIf="excused"> <input  formControlName="post" name="post" id="post"  type="radio" value="Excused">Excused</li>
+            <li> <input  formControlName="post" name="post" id="post"  type="radio" value="Leave">Leave</li>
+            <li *ngIf="wfh">  <input  formControlName="post" name="post" id="post"  type="radio" value="Work From Home">Work From Home</li>
+          </ul>
+            <br>
+        </td>
+        <td>
+          <button type="submit" [disabled]="attendanceForm.invalid" [hidden]="check" (click)="sub()">Submit</button>
+        </td>
+
+    </tr>
+    <tr>
+
+</table>
+
+</form>
+
+</div>
+
